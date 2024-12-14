@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Signin - Coffee Beans</title>
+  <link rel="shortcut icon" href="coffee-icon.png" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="signin.css">
+
+</head>
+
+<body>
+  <!-- Signin Section Starts -->
+  <section class="signin-section d-flex justify-content-center align-items-center min-vh-100">
+    <div class="signin-card p-5">
+      <h3 class="text-center mb-4">Signin</h3>
+
+      <!-- Google and Facebook Signin -->
+      <div class="social-signin text-center mb-4">
+        <button class="btn btn-danger w-100 mb-3">
+          <i class="fab fa-google me-2"></i> Continue with Google
+        </button>
+        <button class="btn btn-primary w-100 mb-3">
+          <i class="fab fa-facebook-f me-2"></i> Continue with Facebook
+        </button>
+      </div>
+
+      <!-- Or Signin with Username and Password -->
+      <div class="divider text-center mb-3">OR</div>
+
+      <form action="signin-handler.php" method="POST">
+        <div class="form-group mb-3">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" class="form-control" placeholder="Enter Username or Email" required>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="Enter Password" required>
+        </div>
+
+        <div class="d-flex justify-content-between mb-4">
+          <a href="#" class="text-primary">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Signin</button>
+      </form>
+
+      <div class="text-center mt-3">
+        <p>Don't have an account? <a href="signup.html" class="text-primary">Sign Up</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Signin Section Ends -->
+
+  <!-- Bootstrap JS (necessary for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
